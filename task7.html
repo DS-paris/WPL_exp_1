@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New User Registration</title>
+</head>
+
+<body>
+
+<h2 style="text-align:center;">New User Registration</h2>
+
+<form>
+
+    <fieldset>
+        <legend><b>Personal Information</b></legend>
+
+        <label>Full Name:</label><br>
+        <input type="text" placeholder="Enter your full name" required autofocus>
+        <br><br>
+
+        <label>Email:</label><br>
+        <input type="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <label>Password:</label><br>
+        <input type="password" placeholder="Create password"
+               pattern=".{6,}" title="Minimum 6 characters" required>
+        <br><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" required>
+        <br><br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><b>Gender</b></legend>
+
+        <input type="radio" name="gender" required> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Other
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><b>Preferences</b></legend>
+
+        <input type="checkbox"> Fiction<br>
+        <input type="checkbox"> Non-Fiction<br>
+        <input type="checkbox"> Self-Help<br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend><b>Upload Profile Picture</b></legend>
+
+        <input type="file" required>
+    </fieldset>
+
+    <br><br>
+
+    <div style="text-align:center;">
+        <input type="submit" value="Register">
+    </div>
+
+</form>
+
+</body>
+</html>
