@@ -8,13 +8,14 @@
 
 <h2 style="text-align:center;">New User Registration</h2>
 
-<form>
+<form action= "#" onsubmit="return validateForm()">
 
     <fieldset>
         <legend><b>Personal Information</b></legend>
 
         <label>Full Name:</label><br>
-        <input type="text" placeholder="Enter your full name" required autofocus>
+        <input type="text" id="fullname" placeholder="Enter your full name" autofocus>
+
         <br><br>
 
         <label>Email:</label><br>
@@ -66,6 +67,21 @@
     </div>
 
 </form>
+
+<script>
+function validateForm() {
+
+    let name = document.getElementById("fullname").value.trim();
+
+    if (name === "") {
+        alert("Username cannot be empty!");
+        return false;   // stops form submission
+    }
+
+    return true;        // allows form submission
+}
+</script>
+
 
 </body>
 </html>
